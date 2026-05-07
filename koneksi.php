@@ -8,7 +8,7 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
 $host = getenv('MYSQLHOST') ?: "mysql.railway.internal";
 $user = getenv('MYSQLUSER') ?: "root";
-$pass = getenv('MYSQLPASSWORD') ?: "LZstNChgUtUIzpLIpzjVtJVusCMZscPX";
+$pass = getenv('MYSQLPASSWORD') ?: "akYVYjLQkUkCvWGTrDyhncZBkfNSRHlY";
 $db   = getenv('MYSQLDATABASE') ?: "railway";
 $port = getenv('MYSQLPORT') ?: 3306;
 
