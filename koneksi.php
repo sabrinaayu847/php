@@ -1,6 +1,11 @@
 <?php
 // PHP akan mencoba mengambil data asli dari Railway dulu, 
 // kalau tidak ada baru pakai data di dalam kutip.
+// Mengizinkan semua origin (untuk development)
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+
 $host = getenv('MYSQLHOST') ?: "mysql.railway.internal";
 $user = getenv('MYSQLUSER') ?: "root";
 $pass = getenv('MYSQLPASSWORD') ?: "LZstNChgUtUIzpLIpzjVtJVusCMZscPX";
